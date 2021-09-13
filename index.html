@@ -2,7 +2,18 @@
 
 
 <iframe
+        id="myIframe"
         src="https://yottled-fe.ngrok.io/embed/will123/forms/d91ad735-80f7-4f0e-8b15-ab8308558df9"
         frameBorder="0"></iframe>
 
 
+
+<script>
+    // Selecting the iframe element
+    var iframe = document.getElementById("myIframe");
+    
+    // Adjusting the iframe height onload event
+    iframe.onload = function(){
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+    </script>
