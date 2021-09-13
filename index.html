@@ -1,5 +1,11 @@
 <h1>Hello, world!!</h1>
- <iframe
+ <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
+
+<iframe
         src="https://yottled-fe.ngrok.io/embed/will123/forms/d91ad735-80f7-4f0e-8b15-ab8308558df9"
       allowfullscreen
         frameBorder="0"
@@ -7,8 +13,4 @@
          onload="resizeIframe(this)
               ></iframe>
 
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-  }
-</script>
+
